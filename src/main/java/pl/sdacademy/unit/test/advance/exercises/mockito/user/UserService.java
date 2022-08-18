@@ -13,9 +13,10 @@ public class UserService {
         return userRepository.findById(id).orElseThrow();
     }
 
-    public User createUser(final User user) {
-        if (userValidator.isUserValid(user)) {
-            return userRepository.addUser(user);
+    public User createUser(final String firstName, final String lastName) {
+        UserDto userDto = new UserDto(firstName, lastName.toUpperCase());
+        if (userValidator.isUserValid(userDto)) {
+            return userRepository.addUser(userDto);
         }
         throw new IllegalArgumentException("User is invalid");
     }
