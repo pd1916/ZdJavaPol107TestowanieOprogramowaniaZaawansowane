@@ -22,8 +22,8 @@ public class Account {
     public void transferMoney(Account account, float amount) {
         //if(validateAmount(amount)) {
         if(validateAmount(amount)
-                //&& validateAccountNumber(this)
-                //&& validateAccountNumber(account)
+            //&& validateAccountNumber(this)
+            //&& validateAccountNumber(account)
         ) {
             account.setBalance(account.getBalance() + amount);
             this.setBalance(this.getBalance() - amount);

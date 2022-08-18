@@ -4,5 +4,6 @@ import java.util.Optional;
 
 public interface AnimalRepository {
     Optional<Animal> findById(long id);
+
     Animal add(Animal animal);
 }

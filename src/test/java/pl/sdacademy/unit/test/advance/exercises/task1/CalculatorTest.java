@@ -9,7 +9,6 @@ import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
-import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest {
 
@@ -24,13 +23,13 @@ class CalculatorTest {
 
     @Test
     void shouldThrowExceptionWhenSecondDigitIsEqulaToZero() {
-       //when & then
-       //assertJ
-       assertThatThrownBy(() -> Calculator.divide(5, 0))
-               .isInstanceOf(IllegalArgumentException.class)
-               .hasMessage("Nie dziel przez zero!");
+        //when & then
+        //assertJ
+        assertThatThrownBy(() -> Calculator.divide(5, 0))
+                .isInstanceOf(IllegalArgumentException.class)
+                .hasMessage("Nie dziel przez zero!");
 
-       //Junit5
+        //Junit5
 //        assertThrows(IllegalArgumentException.class, () -> Calculator.divide(5, 0));
     }
 

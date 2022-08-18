@@ -2,7 +2,7 @@ package pl.sdacademy.unit.test.advance.tdd;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class AccountTest {
 
@@ -19,7 +19,7 @@ class AccountTest {
     }
 
     @Test
-    void shouldNotTransferMoneyWhenAmountIsLessThanZero(){
+    void shouldNotTransferMoneyWhenAmountIsLessThanZero() {
         //given
         Account credit = new Account(1000, "111", new Customer("Jan", "Nowak"));
         Account debit = new Account(5000, "222", new Customer("Alina", "Kowalska"));

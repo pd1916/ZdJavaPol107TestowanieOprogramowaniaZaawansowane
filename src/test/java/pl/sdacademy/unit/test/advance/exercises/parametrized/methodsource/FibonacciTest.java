@@ -1,15 +1,9 @@
 package pl.sdacademy.unit.test.advance.exercises.parametrized.methodsource;
 
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
-import org.junit.jupiter.params.provider.ValueSource;
-import pl.sdacademy.unit.test.advance.exercises.parametrized.methodsource.provider.FibonacciProvider;
 
-import java.util.List;
-import java.util.stream.Stream;
-
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class FibonacciTest {
 
