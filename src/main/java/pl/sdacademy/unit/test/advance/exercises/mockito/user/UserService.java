@@ -1,5 +1,7 @@
 package pl.sdacademy.unit.test.advance.exercises.mockito.user;
 
+import java.util.Optional;
+
 public class UserService {
     private final UserRepository userRepository;
     private final UserValidator userValidator;
